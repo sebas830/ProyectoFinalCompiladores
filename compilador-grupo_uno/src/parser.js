@@ -57,7 +57,7 @@ function parseExpresion(expresion) {
         return nodo;
     }
 
-    return parseSumaResta();// Inicia el análisis desde la suma/resta
+    return parseSumaResta();// Inicia el analisis desde la suma/resta
 }
 
 // pasa la informacion a html para visualizarse

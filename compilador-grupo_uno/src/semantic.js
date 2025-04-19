@@ -1,8 +1,8 @@
-document.getElementById("btnAnalizar").addEventListener("click", analizar);
+document.getElementById("btnAnalizar").addEventListener("click", analizar); 
 
 // Función que realiza el análisis semántico del código ingresado por el usuario.
 function analizar() {
-    const input = document.getElementById("codeInput").value;
+    const input = document.getElementById("codeInput").value;// Toma la exprecion digitada por el ususario
 
     //Opcion de configuracion JSHint, un analizador de calidad de codigo JavaScript.
     const opciones = {
@@ -15,21 +15,23 @@ function analizar() {
     JSHINT(input, opciones);
     const errores = JSHINT.errors;
 
-    let resultado = ""; // limpiamos la variable que almacenara el resultado 
+    // limpiamos la variable que almacenara el resultado 
+    let resultado = ""; 
 
     // verifica si hay error
     if (errores.length > 0) {
         resultado += "❌ Análisis semántico NO exitoso.\n\n";
         errores.forEach(error => {
-        if (error) {
+            if (error) {
             resultado += `❌ Línea ${error.line}: ${traducirError(error.reason)}\n`;
-        }
-    });
+            }
+        });
     } else {
         resultado = "✅ Análisis semántico exitoso. No se encontraron errores.";
     }
 
-    document.getElementById("resultadoSemantico").innerText = resultado; // responde si el analisis esta bien o mal
+    // responde si el analisis esta bien o mal
+    document.getElementById("resultadoSemantico").innerText = resultado; 
     }
 
     // Función para traducir algunos errores comunes al español

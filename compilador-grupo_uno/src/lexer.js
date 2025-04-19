@@ -2,11 +2,11 @@ const palabrasReservadas = new Set(["int", "float", "if", "while", "return", "st
 const operadores = new Set(["+", "-", "*", "/", "=", ">", "<", "==","!","?","&&","||"]);
 const delimitadores = new Set([";", "{", "}", "(", ")"]);
 
-//analiza el codigo y define sus tokens tipo de tokens
+//Analiza el codigo y define sus tokens tipo de tokens
 function analizarCodigo(codigo) {
-    const patronTokens = /(".*?"|\b\d+\.\d+\b|\b\d+\b|\b[a-zA-Z_]\w*\b|[+\-*/=<>!]=?|[;{}()])/g; // expresion regular
-    let coincidencias = [...codigo.matchAll(patronTokens)]; //extracion de tojens
-    let listaTokens = []; // lista los tokens
+    const patronTokens = /(".*?"|\b\d+\.\d+\b|\b\d+\b|\b[a-zA-Z_]\w*\b|[+\-*/=<>!]=?|[;{}()])/g; // Expresion regular
+    let coincidencias = [...codigo.matchAll(patronTokens)]; //Extracion de tokens
+    let listaTokens = []; // Lista los tokens
     let tablaSimbolos = {};
     let numeroLinea = 1;
     let tipoActual = null;
