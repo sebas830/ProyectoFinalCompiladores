@@ -1,2 +1,0 @@
-# (Opcional) Imagen del árbol sintáctico o tabla de símbolos
-# no contamos con imagenes.
