@@ -1,10 +1,5 @@
 # 🛠️ Proyecto Final Compiladores
 
-## 📌 Descripción
-➤ ¿Qué problema resuelve?
-➤ ¿Para quién está pensado?
-➤ ¿Cuál es su utilidad?
-
 ## 📌 Tabla de Contenidos
 - [Descripción](#descripción)
 - [Características](#características)
@@ -15,16 +10,25 @@
 - [Licencia](#licencia)
 - [Autor](#autores)
 
-## 🚀 Características
+## Descripción
+Este proyecto es una aplicación web interactiva desarrollada como trabajo final para la materia de Compiladores.
+
+**➤ ¿Qué problema resuelve?**
+    Su propósito es ilustrar y facilitar el proceso de análisis léxico, sintáctico y semantico de fragmentos fuentes ingresados por el usuario.
+
+**➤ ¿Cuál es su utilidad?**
+    La herramienta permite visualizar cómo se tokeniza el código y cómo se construyen estructuras sintácticas.
+
+## Características
 Lista las funcionalidades principales del programa.
 Puedes usar viñetas para que sea visualmente claro.
 Muestra qué cosas puede hacer tu software.
 
-## 🚀 Instalación
+## Instalación
 Explica cómo instalar y ejecutar el proyecto paso a paso.
 Piensa que lo está leyendo alguien sin experiencia.
 
-## 🚀 Uso
+## Uso
 Explica cómo usar el programa una vez instalado.
 Puede incluir:
 Comandos básicos
@@ -32,22 +36,19 @@ Entradas esperadas
 Resultados
 Imágenes o GIFs para mostrar el funcionamiento
 
-## 🚀 Ejemplos
+## Ejemplos
 Muestra ejemplos concretos de uso para que los usuarios entiendan mejor cómo funciona.
 Puedes incluir fragmentos de código, entradas/salidas, o flujos de interacción.
 
-## 🚀 Tecnologías
-Lista los lenguajes, frameworks o herramientas usados.
-Da contexto técnico del proyecto.
+## Tecnologías
+HTML, CSS y JavaScript para la web interactiva.
+Node.js para el levantar servidor local.
+GitHub Pages para despliegue en línea.
 
-## 🚀 Licencia
-Indica el tipo de licencia de uso del proyecto.
-Esto define qué puede hacer la gente con tu código (usarlo, modificarlo, venderlo, etc.).
+## Licencia
+Se permite solo para uso educativo, no puede ser vendido, mas sin embargo puede ser usado externamente y modificado.
 
-## 🚀 Autores
+## Autores
 - **Sebastian Ramirez Parra** – Análisis y Backend – [@sebas830](https://github.com/sebas830)
-- **Maria Alejandra Reina** – Interfaz Web – [@sebas830](https://github.com/sebas830)
+- **Maria Alejandra Reina** – Interfaz Web – [@Mari-R122](https://github.com/Mari-R122)
 - **Jessica Tascon** – Documentación – [@sebas830](https://github.com/sebas830)
-
-
-
