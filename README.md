@@ -10,6 +10,7 @@
 - [📜 Licencia](#licencia)
 - [👥 Autores](#autores)
 
+<a name="descripción"></a>
 ## 📄 Descripción
 Este proyecto es una aplicación web interactiva desarrollada como trabajo final para la materia de Compiladores.
 
@@ -19,6 +20,7 @@ Su propósito es ilustrar y facilitar el proceso de análisis léxico, sintácti
 ### ➤ ¿Cuál es su utilidad?
 La herramienta permite visualizar cómo se tokeniza el código y cómo se analiza la sintaxis y la semántica.
 
+<a name="características"></a>
 ## ✨ Características
 - Genera análisis léxico.
 - Genera análisis sintáctico.
@@ -30,19 +32,19 @@ La herramienta permite visualizar cómo se tokeniza el código y cómo se analiz
 
 ## 🔧 Instalación
 Asegúrate de tener los siguientes programas descargados:
-    1. Visual Studio Code  
-    2. Python  
-    3. Node.js  
+1. Visual Studio Code  
+2. Python  
+3. Node.js  
 
 Para la instalación y ejecución local del programa:
-    1. Dirígete al link del repositorio: https://github.com/sebas830/ProyectoFinalCompiladores  
-    2. Selecciona **<> Code** y posteriormente **Local**. En la parte inferior izquierda se encuentra el archivo .ZIP para descargar.  
-    3. Extrae la carpeta.  
-    4. Abre la carpeta descargada desde Visual Studio.  
-    5. Presiona Ctrl+J para abrir la consola.  
-    6. Luego, ejecuta el siguiente comando para iniciar el servidor: serve .
-    7. Presiona Ctrl + clic en el enlace que aparece en la terminal (por defecto será: http://localhost:3000)
-    8. en este ultimo paso ya se estaria ejecutando su programa.
+1. Dirígete al link del repositorio: https://github.com/sebas830/ProyectoFinalCompiladores  
+2. Selecciona **<> Code** y posteriormente **Local**. En la parte inferior izquierda se encuentra el archivo .ZIP para descargar.  
+3. Extrae la carpeta.  
+4. Abre la carpeta descargada desde Visual Studio.  
+5. Presiona Ctrl+J para abrir la consola.  
+6. Luego, ejecuta el siguiente comando para iniciar el servidor: serve .
+7. Presiona Ctrl + clic en el enlace que aparece en la terminal (por defecto será: http://localhost:3000)
+8. en este ultimo paso ya se estaria ejecutando su programa.
 
 Para solo ejecucion del programa ingrese al siguiente Link:
     https://sebas830.github.io/ProyectoFinalCompiladores/
@@ -80,9 +82,9 @@ Ejemplos para los analisis:
     let s=10; -> si digitamos esta linea tambien nos dira que el analisis es incorrecto porque ya se creo la variable anteriormente.
 
 ## 🧰 Tecnologías
-HTML, CSS y JavaScript para la web interactiva.
-Node.js para el levantar servidor local.
-GitHub Pages para despliegue en línea.
+- HTML, CSS y JavaScript para la web interactiva.
+- Node.js para el levantar servidor local.
+- GitHub Pages para despliegue en línea.
 
 ## 📜 Licencia
 Se permite solo para uso educativo, no puede ser vendido, mas sin embargo puede ser usado externamente y modificado.
