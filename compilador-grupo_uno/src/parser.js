@@ -1,25 +1,27 @@
-document.getElementById("btn-analizar").addEventListener("click", function () {
-    const expresion = document.getElementById("expresion").value;
+document.getElementById("btn-analizar").addEventListener("click", function () { // Asocia al btn-analizar del html
+    const expresion = document.getElementById("expresion").value; // Toma la exprecion digitada por el ususario
     try {
-        const arbol = parseExpresion(expresion);
-        document.getElementById("resultadoSintactico").innerHTML = renderArbol(arbol);
+        const arbol = parseExpresion(expresion);// Llama a la funcion para analizar la expresion
+        document.getElementById("resultadoSintactico").innerHTML = renderArbol(arbol);// Muestra el arbol
     } catch (error) {
-        document.getElementById("resultadoSintactico").innerHTML = "Error de sintaxis: " + error.message;
+        document.getElementById("resultadoSintactico").innerHTML = "Error de sintaxis: " + error.message; // En caso de algun error
     }
 });
 
+//analiza la expresion aritmetica
 function parseExpresion(expresion) {
-    const tokens = expresion.match(/\w+|[+\-*/()]/g);
+    const tokens = expresion.match(/\w+|[+\-*/()]/g);// Separa los tokens
     let index = 0;
 
     function siguiente() {
-        return tokens[index++];
+        return tokens[index++];// Avanza y retorna el siguiente token
     }
 
     function actual() {
-        return tokens[index];
+        return tokens[index];// Retorna el token actual
     }
 
+    // Analiza los factores-> identificadores o expresiones entre parentsis
     function parseFactor() {
         const token = siguiente();
         if (token === "(") {
@@ -33,6 +35,7 @@ function parseExpresion(expresion) {
         }
     }
 
+    // multiplicaciones y divisiones
     function parseProductoDivision() {
         let nodo = parseFactor();
         while (["*", "/"].includes(actual())) {
@@ -43,6 +46,7 @@ function parseExpresion(expresion) {
         return nodo;
     }
 
+    // sumas y restas
     function parseSumaResta() {
         let nodo = parseProductoDivision();
         while (["+", "-"].includes(actual())) {
@@ -53,9 +57,10 @@ function parseExpresion(expresion) {
         return nodo;
     }
 
-    return parseSumaResta();
+    return parseSumaResta();// Inicia el análisis desde la suma/resta
 }
 
+// pasa la informacion a html para visualizarse
 function renderArbol(nodo) {
     if (!nodo) return "";
     if (nodo.tipo === "Identificador") return `<div class="node"><span class="label">Identificador:</span> ${nodo.valor}</div>`;
