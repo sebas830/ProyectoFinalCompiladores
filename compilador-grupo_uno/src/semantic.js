@@ -1,40 +1,54 @@
 document.getElementById("btnAnalizar").addEventListener("click", analizar);
 
+// Función que realiza el análisis semántico del código ingresado por el usuario.
 function analizar() {
     const input = document.getElementById("codeInput").value;
-    const lineas = input.split("\n");
-    const declaradas = new Set();
-    const errores = [];
 
-    lineas.forEach((linea, index) => {
-        const trimmed = linea.trim();
-        const numLinea = index + 1;
+    //Opcion de configuracion JSHint, un analizador de calidad de codigo JavaScript.
+    const opciones = {
+        esversion: 6, 
+        undef: true,  // reporta el erro si la variable esta 2 vece definida
+        varstmt: true    
+    };
 
-        // Declaración con let, const o var
-        const declaracion = trimmed.match(/^(let|const|var)\s+(\w+)\s*(=.*)?;?$/);
-        if (declaracion) {
-            const nombre = declaracion[2];
-            if (declaradas.has(nombre)) {
-                errores.push(`Línea ${numLinea}: Variable '${nombre}' ya fue declarada.`);
-            } else {
-                declaradas.add(nombre);
-            }
-            return;
-        }
+    // Ejecuta el analisis
+    JSHINT(input, opciones);
+    const errores = JSHINT.errors;
 
-        // Asignación (ej. x = 10;)
-        const asignacion = trimmed.match(/^(\w+)\s*=\s*.+;?$/);
-        if (asignacion) {
-            const nombre = asignacion[1];
-            if (!declaradas.has(nombre)) {
-                errores.push(`Línea ${numLinea}: Variable '${nombre}' usada sin declarar.`);
-            }
+    let resultado = ""; // limpiamos la variable que almacenara el resultado 
+
+    // verifica si hay error
+    if (errores.length > 0) {
+        resultado += "❌ Análisis semántico NO exitoso.\n\n";
+        errores.forEach(error => {
+        if (error) {
+            resultado += `❌ Línea ${error.line}: ${traducirError(error.reason)}\n`;
         }
     });
+    } else {
+        resultado = "✅ Análisis semántico exitoso. No se encontraron errores.";
+    }
 
-    const resultado = errores.length > 0
-        ? "Análisis semántico NO exitoso."
-        : "Análisis semántico exitoso.";
+    document.getElementById("resultadoSemantico").innerText = resultado; // responde si el analisis esta bien o mal
+    }
 
-    document.getElementById("resultadoSemantico").innerText = resultado;
+    // Función para traducir algunos errores comunes al español
+    function traducirError(mensaje) {
+    const traducciones = {
+        "'{a}' is not defined.": "La variable '{a}' no está definida.",
+        "'{a}' has already been declared.": "La variable '{a}' ya fue declarada.",
+        "Missing semicolon.": "Falta punto y coma.",
+        "Expected an identifier and instead saw '{a}'.": "Se esperaba un identificador y se encontró '{a}'."
+    };
+
+    // recorre el diccionario de traducciones, si no esta devuelve el mensaje original
+    for (const clave in traducciones) {
+        const regex = new RegExp(clave.replace("{a}", "(.+)"));
+        const match = mensaje.match(regex);
+        if (match) {
+        return traducciones[clave].replace("{a}", match[1]);
+        }
+    }
+
+    return mensaje;
 }
