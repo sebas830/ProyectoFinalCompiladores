@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!--Hace que la visualización se adapte a distintos dispositivos-->
+  <title>Analizador Léxico, Sintáctico y Semántico</title>
+  
+  <link rel="stylesheet" href="compilador-grupo_uno/frontend/stylesLexico.css" />
+  <link rel="stylesheet" href="compilador-grupo_uno/frontend/stylesSintactico.css" />
+  <link rel="stylesheet" href="compilador-grupo_uno/frontend/stylesSemantico.css" />
+</head>
+<body>
+  <h1>Analizador Léxico</h1>
+  <textarea id="codigo" placeholder="Escribe tu código aquí...">int x = 10;
+float y = 5.5;
+string mensaje = "Hola";
+if (x > y) {
+x = x + 1;
+}
+void imprimir() {
+return;
+}
+  </textarea>
+  <button onclick="analizarLexico()">Analizar Léxico</button>
+  <div class="output-section">
+    <h2>Tabla de Tokens</h2>
+    <table id="tablaTokens">
+      <thead>
+        <tr><th>Token</th><th>Tipo</th><th>Línea</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Tabla de Símbolos</h2>
+    <table id="tablaSimbolos">
+      <thead>
+        <tr><th>Nombre</th><th>Tipo</th><th>Token</th><th>Líneas</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h1>Analizador Sintáctico</h1>
+  <input type="text" id="expresion" placeholder="Escribe una expresión aritmética ejemplo (a + b * (c - 2))" />
+  <button id="btn-analizar">Analizar Sintaxis</button>
+  <div id="resultadoSintactico"></div>
+
+  <h1>Analizador Semántico</h1>
+  <textarea id="codeInput" class="editor-codigo" placeholder="Escribe el código a analizar..."></textarea>
+  <button id="btnAnalizar" class="boton-analizar">Analizar Semántico</button>
+  <div id="resultadoSemantico" class="output"></div>
+
+  <script src="compilador-grupo_uno/src/lexer.js"></script>
+  <script src="compilador-grupo_uno/src/parser.js"></script>
+  <script src="compilador-grupo_uno/src/semantic.js"></script>
+</body>
+</html>
