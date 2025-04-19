@@ -1,33 +1,53 @@
-# 🛠️ Proyecto Final – Compiladores
+# 🛠️ Proyecto Final Compiladores
 
-## 📌 Introducción
+## 📌 Descripción
+➤ ¿Qué problema resuelve?
+➤ ¿Para quién está pensado?
+➤ ¿Cuál es su utilidad?
 
-Este repositorio contiene la **estructura base** que debes utilizar para el desarrollo del **proyecto final** de la asignatura *Compiladores*. Todos los estudiantes deben trabajar sobre esta estructura y respetar la organización de carpetas y archivos propuesta.
+## 📌 Tabla de Contenidos
+- [Descripción](#descripción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Ejemplos](#ejemplos)
+- [Tecnologías](#tecnologías)
+- [Licencia](#licencia)
+- [Autor](#autores)
 
-El objetivo del proyecto es implementar un **mini compilador** que contemple las fases de análisis léxico, sintáctico y semántico. Cada grupo tendrá un enfoque técnico específico que deberá profundizar según las instrucciones del docente.
+## 🚀 Características
+Lista las funcionalidades principales del programa.
+Puedes usar viñetas para que sea visualmente claro.
+Muestra qué cosas puede hacer tu software.
 
----
+## 🚀 Instalación
+Explica cómo instalar y ejecutar el proyecto paso a paso.
+Piensa que lo está leyendo alguien sin experiencia.
 
-## 🚀 Instrucciones para usar este repositorio
+## 🚀 Uso
+Explica cómo usar el programa una vez instalado.
+Puede incluir:
+Comandos básicos
+Entradas esperadas
+Resultados
+Imágenes o GIFs para mostrar el funcionamiento
 
-Sigue los pasos a continuación para comenzar correctamente tu proyecto:
+## 🚀 Ejemplos
+Muestra ejemplos concretos de uso para que los usuarios entiendan mejor cómo funciona.
+Puedes incluir fragmentos de código, entradas/salidas, o flujos de interacción.
 
-### 1. Realiza un Fork del repositorio
+## 🚀 Tecnologías
+Lista los lenguajes, frameworks o herramientas usados.
+Da contexto técnico del proyecto.
 
-Haz clic en el botón **"Fork"** en la parte superior derecha de este repositorio. Esto creará una copia en tu cuenta de GitHub.
+## 🚀 Licencia
+Indica el tipo de licencia de uso del proyecto.
+Esto define qué puede hacer la gente con tu código (usarlo, modificarlo, venderlo, etc.).
 
-### 2. Clona tu Fork a tu máquina local
-Asegúrate de realizar commits de manera frecuente para registrar tu progreso.
-
-Sube tus cambios a GitHub
-
-### 3. Comparte tu repositorio con el docente
-Antes de la fecha de entrega, asegúrate de compartir el enlace de tu repositorio (fork) con el docente a través del medio indicado 
-
-
-
-
-
+## 🚀 Autores
+- **Sebastian Ramirez Parra** – Análisis y Backend – [@sebas830](https://github.com/sebas830)
+- **Maria Alejandra Reina** – Interfaz Web – [@sebas830](https://github.com/sebas830)
+- **Jessica Tascon** – Documentación – [@sebas830](https://github.com/sebas830)
 
 
 
