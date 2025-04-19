@@ -30,6 +30,7 @@ La herramienta permite visualizar cómo se tokeniza el código y cómo se analiz
 - Visualización de tokens generados y errores detectados.
 - Código modular.
 
+<a name="instalación"></a>
 ## 🔧 Instalación
 Asegúrate de tener los siguientes programas descargados:
 1. Visual Studio Code  
@@ -49,6 +50,7 @@ Para la instalación y ejecución local del programa:
 Para solo ejecucion del programa ingrese al siguiente Link:
     https://sebas830.github.io/ProyectoFinalCompiladores/
 
+<a name="uso"></a>
 ## 🚀 Uso
 Funcionalidades de la Página
 La página cuenta con tres funcionalidades principales:
@@ -63,6 +65,8 @@ Cada funcionalidad está asociada a un bloque de texto independiente, donde el u
 - Presione el botón asociado a la función que desea ejecutar: léxico, sintáctico o semántico.
 - La página mostrará el resultado del análisis solicitado, de acuerdo con la función seleccionada.
 
+
+<a name="ejemplos"></a>
 ## 🧪 Ejemplos
 Ejemplos para los analisis:
 
@@ -81,14 +85,17 @@ Ejemplos para los analisis:
     let s=10; -> si solo se pone esta opcion el analisis es exitoso
     let s=10; -> si digitamos esta linea tambien nos dira que el analisis es incorrecto porque ya se creo la variable anteriormente.
 
+<a name="tecnologías"></a>
 ## 🧰 Tecnologías
 - HTML, CSS y JavaScript para la web interactiva.
 - Node.js para el levantar servidor local.
 - GitHub Pages para despliegue en línea.
 
+<a name="licencia"></a>
 ## 📜 Licencia
 Se permite solo para uso educativo, no puede ser vendido, mas sin embargo puede ser usado externamente y modificado.
 
+<a name="autores"></a>
 ## 👥 Autores
 - **Sebastian Ramirez Parra** – Análisis y Backend – [@sebas830](https://github.com/sebas830)
 - **Maria Alejandra Reina** – Interfaz Web – [@Mari-R122](https://github.com/Mari-R122)
