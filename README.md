@@ -34,7 +34,6 @@ La herramienta permite visualizar cómo se tokeniza el código y cómo se analiz
 ## 🔧 Instalación
 Asegúrate de tener los siguientes programas descargados:
 1. Visual Studio Code  
-2. Python  
 3. Node.js  
 
 Para la instalación y ejecución local del programa:
