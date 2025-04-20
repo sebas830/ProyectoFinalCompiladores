@@ -1,5 +1,5 @@
 <!-- Descripción del proyecto, cómo ejecutarlo USEGER.md--> 
-# 📄 USEGER.md — Guía de Uso del Compilador Web
+# 📄 USAGE.md — Guía de Uso del Compilador Web
 
 Este documento describe cómo utilizar la aplicación web desarrollada para el análisis de compiladores. La herramienta permite realizar análisis léxico, sintáctico y semántico de manera visual e interactiva.
 
