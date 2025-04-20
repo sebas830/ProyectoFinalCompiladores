@@ -99,4 +99,4 @@ Se permite solo para uso educativo, no puede ser vendido, mas sin embargo puede 
 ## 👥 Autores
 - **Sebastian Ramirez Parra** – Análisis y Backend – [@sebas830](https://github.com/sebas830)
 - **Maria Alejandra Reina** – Interfaz Web – [@Mari-R122](https://github.com/Mari-R122)
-- **Jessica Tascon** – Documentación – [@sebas830](https://github.com/sebas830)
+- **Jessica Tascon** – Documentación – [@JESSICATASCON](https://github.com/JESSICATASCON)
