@@ -60,5 +60,5 @@ Si tienes preguntas o sugerencias no dudes en escribirnos:
 📧 **mariaalejandrareina122@gmail.com**  
 🐙 GitHub: [@Mari-R122](https://github.com/Mari-R122)
 
-📧 **sebas830.dev@gmail.com**  
-🐙 GitHub: [@Mari-R122](https://github.com/Mari-R122)
+📧 **jessicamarcela12@hotmail.com**  
+🐙 GitHub: ([@JESSICATASCON](https://github.com/JESSICATASCON))
