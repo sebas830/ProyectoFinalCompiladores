@@ -93,7 +93,7 @@ Ejemplos para los analisis:
 
 <a name="licencia"></a>
 ## 📜 Licencia
-Se permite solo para uso educativo, no puede ser vendido, mas sin embargo puede ser usado externamente y modificado.
+Se permite solo para uso educativo, no puede ser vendido, sin embargo puede ser usado externamente y modificado.
 
 <a name="autores"></a>
 ## 👥 Autores
