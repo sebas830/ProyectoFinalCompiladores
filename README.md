@@ -42,16 +42,17 @@ Para la instalación y ejecución local del programa:
 3. Extrae la carpeta.  
 4. Abre la carpeta descargada desde Visual Studio.  
 5. Presiona Ctrl+J para abrir la consola.  
-6. Luego, ejecuta el siguiente comando para iniciar el servidor: serve .
-7. Presiona Ctrl + clic en el enlace que aparece en la terminal (por defecto será: http://localhost:3000)
-8. en este ultimo paso ya se estaria ejecutando su programa.
+6. Ejecuta este comando para el servidor en Node.js: npm install -g serve  
+7. Luego, ejecuta el siguiente comando para iniciar el servidor: serve .
+8. Presiona Ctrl + clic en el enlace que aparece en la terminal (por defecto será: http://localhost:3000)
+9. en este ultimo paso ya se estaria ejecutando su programa.
 
 Para solo ejecucion del programa ingrese al siguiente Link:
     https://sebas830.github.io/ProyectoFinalCompiladores/
 
 <a name="uso"></a>
 ## 🚀 Uso
-Funcionalidades de la Página
+**Funcionalidades de la Página:**
 La página cuenta con tres funcionalidades principales:
     **- Análisis Léxico**
     **- Análisis Sintáctico**
@@ -87,6 +88,7 @@ Ejemplos para los analisis:
 <a name="tecnologías"></a>
 ## 🧰 Tecnologías
 - HTML, CSS y JavaScript para la web interactiva.
+- JSHint: herramienta para analizar la calidad del código JS.
 - Node.js para el levantar servidor local.
 - GitHub Pages para despliegue en línea.
 
